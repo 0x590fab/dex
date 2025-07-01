@@ -1,4 +1,4 @@
-import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from '@uniswap/sdk-core'
+import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from '@0x590fab/sdk-core'
 
 export const CHAIN_IDS_TO_NAMES = {
   [ChainId.MAINNET]: 'mainnet',
@@ -13,7 +13,7 @@ export const CHAIN_IDS_TO_NAMES = {
   [ChainId.OPTIMISM]: 'optimism',
   [ChainId.OPTIMISM_GOERLI]: 'optimism_goerli',
   [ChainId.BNB]: 'bnb',
-  [ChainId.AVALANCHE]: 'avalanche',
+  [ChainId.PLUME]: 'avalanche',
   [ChainId.BASE]: 'base',
 } as const
 
@@ -39,7 +39,7 @@ export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   ChainId.OPTIMISM,
   ChainId.ARBITRUM_ONE,
   ChainId.BNB,
-  ChainId.AVALANCHE,
+  ChainId.PLUME,
   ChainId.BASE,
 ] as const
 
@@ -69,7 +69,7 @@ export const L1_CHAIN_IDS = [
   ChainId.CELO,
   ChainId.CELO_ALFAJORES,
   ChainId.BNB,
-  ChainId.AVALANCHE,
+  ChainId.PLUME,
 ] as const
 
 export type SupportedL1ChainId = (typeof L1_CHAIN_IDS)[number]
@@ -112,7 +112,7 @@ export function getChainPriority(chainId: ChainId): number {
       return 4
     case ChainId.BNB:
       return 5
-    case ChainId.AVALANCHE:
+    case ChainId.PLUME:
       return 6
     case ChainId.CELO:
     case ChainId.CELO_ALFAJORES:

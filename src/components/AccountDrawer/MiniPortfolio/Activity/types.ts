@@ -1,4 +1,4 @@
-import { ChainId, Currency } from '@uniswap/sdk-core'
+import { ChainId, Currency } from '@0x590fab/sdk-core'
 import { TransactionStatus } from 'types/types-and-hooks'
 
 export type Activity = {

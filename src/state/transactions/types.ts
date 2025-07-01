@@ -1,4 +1,4 @@
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@0x590fab/sdk-core'
 
 export interface SerializableTransactionReceipt {
   to: string

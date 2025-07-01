@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, Price, Token, TradeType } from '@uniswap/sdk-core'
+import { ChainId, Currency, CurrencyAmount, Price, Token, TradeType } from '@0x590fab/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
 import { useMemo, useRef } from 'react'
@@ -9,7 +9,7 @@ import {
   BRIDGED_USDC_ARBITRUM,
   CUSD_CELO,
   DAI_OPTIMISM,
-  USDC_AVALANCHE,
+  USDC_PLUME,
   USDC_MAINNET,
   USDC_POLYGON,
   USDT_BSC,
@@ -24,7 +24,7 @@ const STABLECOIN_AMOUNT_OUT: { [chainId: number]: CurrencyAmount<Token> } = {
   [ChainId.POLYGON]: CurrencyAmount.fromRawAmount(USDC_POLYGON, 10_000e6),
   [ChainId.CELO]: CurrencyAmount.fromRawAmount(CUSD_CELO, 10_000e18),
   [ChainId.BNB]: CurrencyAmount.fromRawAmount(USDT_BSC, 100e18),
-  [ChainId.AVALANCHE]: CurrencyAmount.fromRawAmount(USDC_AVALANCHE, 10_000e6),
+  [ChainId.PLUME]: CurrencyAmount.fromRawAmount(USDC_PLUME, 10_000e6),
 }
 
 /**

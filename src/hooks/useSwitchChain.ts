@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 import { Connector } from '@web3-react/types'
 import { networkConnection } from 'connection'
 import { getChainInfo } from 'constants/chainInfo'

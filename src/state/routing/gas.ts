@@ -1,6 +1,6 @@
 import type { JsonRpcProvider } from '@ethersproject/providers'
 import { MaxUint256, PERMIT2_ADDRESS } from '@uniswap/permit2-sdk'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@0x590fab/sdk-core'
 import ERC20_ABI from 'abis/erc20.json'
 import { Erc20 } from 'abis/types'
 import { getContract } from 'utils'

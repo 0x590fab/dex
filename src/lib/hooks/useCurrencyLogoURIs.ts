@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 import useHttpLocations from 'hooks/useHttpLocations'
 import { useMemo } from 'react'
 import { isAddress } from 'utils'
@@ -26,7 +26,7 @@ export function chainIdToNetworkName(networkId: ChainId): Network {
       return 'smartchain'
     case ChainId.CELO:
       return 'celo'
-    case ChainId.AVALANCHE:
+    case ChainId.PLUME:
       return 'avalanchec'
     default:
       return 'ethereum'
@@ -43,7 +43,7 @@ export function getNativeLogoURI(chainId: ChainId = ChainId.MAINNET): string {
     case ChainId.CELO:
     case ChainId.CELO_ALFAJORES:
       return CeloLogo
-    case ChainId.AVALANCHE:
+    case ChainId.PLUME:
       return AvaxLogo
     default:
       return EthereumLogo
@@ -52,7 +52,7 @@ export function getNativeLogoURI(chainId: ChainId = ChainId.MAINNET): string {
 
 function getTokenLogoURI(address: string, chainId: ChainId = ChainId.MAINNET): string | void {
   const networkName = chainIdToNetworkName(chainId)
-  const networksWithUrls = [ChainId.ARBITRUM_ONE, ChainId.MAINNET, ChainId.OPTIMISM, ChainId.BNB, ChainId.AVALANCHE]
+  const networksWithUrls = [ChainId.ARBITRUM_ONE, ChainId.MAINNET, ChainId.OPTIMISM, ChainId.BNB, ChainId.PLUME]
   if (isCelo(chainId) && address === nativeOnChain(chainId).wrapped.address) {
     return CeloLogo
   }

@@ -1,4 +1,4 @@
-import { ChainId, Currency, Ether, NativeCurrency, Token, UNI_ADDRESSES, WETH9 } from '@uniswap/sdk-core'
+import { ChainId, Currency, Ether, NativeCurrency, Token, UNI_ADDRESSES, WETH9 } from '@0x590fab/sdk-core'
 import invariant from 'tiny-invariant'
 
 export const NATIVE_CHAIN_ID = 'NATIVE'
@@ -221,29 +221,29 @@ export const BTC_BSC = new Token(ChainId.BNB, '0x7130d2A12B9BCbFAe4f2634d864A1Ee
 export const BUSD_BSC = new Token(ChainId.BNB, '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', 18, 'BUSD', 'BUSD')
 export const DAI_BSC = new Token(ChainId.BNB, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'DAI')
 
-export const USDC_AVALANCHE = new Token(
-  ChainId.AVALANCHE,
+export const USDC_PLUME = new Token(
+  ChainId.PLUME,
   '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
   6,
   'USDC',
   'USDC Token'
 )
-export const USDT_AVALANCHE = new Token(
-  ChainId.AVALANCHE,
+export const USDT_PLUME = new Token(
+  ChainId.PLUME,
   '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7',
   6,
   'USDT',
   'Tether USD'
 )
-export const WETH_AVALANCHE = new Token(
-  ChainId.AVALANCHE,
+export const WETH_PLUME = new Token(
+  ChainId.PLUME,
   '0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB',
   18,
   'WETH',
   'Wrapped Ether'
 )
-export const DAI_AVALANCHE = new Token(
-  ChainId.AVALANCHE,
+export const DAI_PLUME = new Token(
+  ChainId.PLUME,
   '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70',
   18,
   'DAI.e',
@@ -329,8 +329,8 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
     'Celo native asset'
   ),
   [ChainId.BNB]: new Token(ChainId.BNB, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
-  [ChainId.AVALANCHE]: new Token(
-    ChainId.AVALANCHE,
+  [ChainId.PLUME]: new Token(
+    ChainId.PLUME,
     '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     18,
     'WAVAX',
@@ -397,8 +397,8 @@ class BscNativeCurrency extends NativeCurrency {
   }
 }
 
-export function isAvalanche(chainId: number): chainId is ChainId.AVALANCHE {
-  return chainId === ChainId.AVALANCHE
+export function isAvalanche(chainId: number): chainId is ChainId.PLUME {
+  return chainId === ChainId.PLUME
 }
 
 class AvaxNativeCurrency extends NativeCurrency {
@@ -472,6 +472,6 @@ export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in ChainId]?: s
     [ChainId.CELO_ALFAJORES]: PORTAL_USDC_CELO.address,
     [ChainId.GOERLI]: USDC_GOERLI.address,
     [ChainId.SEPOLIA]: USDC_SEPOLIA.address,
-    [ChainId.AVALANCHE]: USDC_AVALANCHE.address,
+    [ChainId.PLUME]: USDC_PLUME.address,
   },
 }

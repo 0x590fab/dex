@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 
 import { getChainPriority } from './chains'
 
@@ -15,7 +15,7 @@ const chainPriorityTestCases: [ChainId, number][] = [
   [ChainId.POLYGON_MUMBAI, 3],
   [ChainId.BASE, 4],
   [ChainId.BNB, 5],
-  [ChainId.AVALANCHE, 6],
+  [ChainId.PLUME, 6],
   [ChainId.CELO, 7],
   [ChainId.CELO_ALFAJORES, 7],
 ]

@@ -1,6 +1,6 @@
 import type { JsonRpcProvider } from '@ethersproject/providers'
 import { MixedRouteSDK } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Token } from '@0x590fab/sdk-core'
 import { Pair, Route as V2Route } from '@uniswap/v2-sdk'
 import { FeeAmount, Pool, Route as V3Route } from '@uniswap/v3-sdk'
 import { isAvalanche, isBsc, isMatic, nativeOnChain } from 'constants/tokens'

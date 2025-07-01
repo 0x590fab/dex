@@ -1,5 +1,5 @@
 import { t, Trans } from '@lingui/macro'
-import { ChainId, Currency } from '@uniswap/sdk-core'
+import { ChainId, Currency } from '@0x590fab/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { ColumnCenter } from 'components/Column'
 import Column from 'components/Column'

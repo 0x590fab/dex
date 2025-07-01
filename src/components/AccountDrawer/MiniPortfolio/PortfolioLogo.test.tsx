@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 import { BRIDGED_USDC_ARBITRUM, DAI, DAI_ARBITRUM_ONE, USDC_MAINNET } from 'constants/tokens'
 import { render } from 'test-utils/render'
 

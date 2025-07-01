@@ -1,4 +1,4 @@
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@0x590fab/sdk-core'
 
 export enum SlippageValidationResult {
   TooLow,

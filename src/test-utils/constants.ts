@@ -1,4 +1,4 @@
-import { CurrencyAmount, Percent, Token, TradeType } from '@uniswap/sdk-core'
+import { CurrencyAmount, Percent, Token, TradeType } from '@0x590fab/sdk-core'
 // This is a test file, so the import of smart-order-router is allowed.
 // eslint-disable-next-line @typescript-eslint/no-restricted-imports
 import { V3Route } from '@uniswap/smart-order-router'

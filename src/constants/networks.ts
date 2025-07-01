@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 
 /**
  * Fallback JSON-RPC endpoints.
@@ -90,7 +90,7 @@ export const FALLBACK_URLS = {
     'https://bsc-dataseed4.defibit.io',
     'https://rpc.ankr.com/bsc',
   ],
-  [ChainId.AVALANCHE]: [
+  [ChainId.PLUME]: [
     // "Safe" URLs
     'https://api.avax.network/ext/bc/C/rpc',
     'https://avalanche-c-chain.publicnode.com',
@@ -124,6 +124,6 @@ export const RPC_URLS = {
   [ChainId.CELO]: FALLBACK_URLS[ChainId.CELO],
   [ChainId.CELO_ALFAJORES]: FALLBACK_URLS[ChainId.CELO_ALFAJORES],
   [ChainId.BNB]: [...FALLBACK_URLS[ChainId.BNB]],
-  [ChainId.AVALANCHE]: [...FALLBACK_URLS[ChainId.AVALANCHE]],
+  [ChainId.PLUME]: [...FALLBACK_URLS[ChainId.PLUME]],
   [ChainId.BASE]: [...FALLBACK_URLS[ChainId.BASE]],
 }

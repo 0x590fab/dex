@@ -1,5 +1,5 @@
 import type { Web3Provider } from '@ethersproject/providers'
-import { BigintIsh, ChainId, CurrencyAmount, Token, TradeType } from '@uniswap/sdk-core'
+import { BigintIsh, ChainId, CurrencyAmount, Token, TradeType } from '@0x590fab/sdk-core'
 // This file is lazy-loaded, so the import of smart-order-router is intentional.
 // eslint-disable-next-line @typescript-eslint/no-restricted-imports
 import {

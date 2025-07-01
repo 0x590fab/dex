@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@0x590fab/sdk-core'
 import { useMemo } from 'react'
 
 import useStablecoinPrice from './useStablecoinPrice'

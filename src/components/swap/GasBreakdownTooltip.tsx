@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@0x590fab/sdk-core'
 import { AutoColumn } from 'components/Column'
 import Row from 'components/Row'
 import { nativeOnChain } from 'constants/tokens'

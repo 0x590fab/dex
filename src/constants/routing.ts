@@ -1,5 +1,5 @@
 // a list of tokens by chain
-import { ChainId, Currency, Token } from '@uniswap/sdk-core'
+import { ChainId, Currency, Token } from '@0x590fab/sdk-core'
 
 import {
   ARB,
@@ -11,7 +11,7 @@ import {
   CUSD_CELO_ALFAJORES,
   DAI,
   DAI_ARBITRUM_ONE,
-  DAI_AVALANCHE,
+  DAI_PLUME,
   DAI_BSC,
   DAI_OPTIMISM,
   DAI_POLYGON,
@@ -22,7 +22,7 @@ import {
   PORTAL_USDC_CELO,
   USDC_ARBITRUM,
   USDC_ARBITRUM_GOERLI,
-  USDC_AVALANCHE,
+  USDC_PLUME,
   USDC_BASE,
   USDC_BSC,
   USDC_MAINNET,
@@ -30,7 +30,7 @@ import {
   USDC_POLYGON,
   USDT,
   USDT_ARBITRUM_ONE,
-  USDT_AVALANCHE,
+  USDT_PLUME,
   USDT_BSC,
   USDT_OPTIMISM,
   USDT_POLYGON,
@@ -39,7 +39,7 @@ import {
   WBTC_CELO,
   WBTC_OPTIMISM,
   WBTC_POLYGON,
-  WETH_AVALANCHE,
+  WETH_PLUME,
   WETH_POLYGON,
   WETH_POLYGON_MUMBAI,
   WRAPPED_NATIVE_CURRENCY,
@@ -108,12 +108,12 @@ export const COMMON_BASES: ChainCurrencyList = {
   [ChainId.CELO_ALFAJORES]: [nativeOnChain(ChainId.CELO_ALFAJORES), CUSD_CELO_ALFAJORES, CEUR_CELO_ALFAJORES],
 
   [ChainId.BNB]: [nativeOnChain(ChainId.BNB), DAI_BSC, USDC_BSC, USDT_BSC, ETH_BSC, BTC_BSC, BUSD_BSC],
-  [ChainId.AVALANCHE]: [
-    nativeOnChain(ChainId.AVALANCHE),
-    DAI_AVALANCHE,
-    USDC_AVALANCHE,
-    USDT_AVALANCHE,
-    WETH_AVALANCHE,
+  [ChainId.PLUME]: [
+    nativeOnChain(ChainId.PLUME),
+    DAI_PLUME,
+    USDC_PLUME,
+    USDT_PLUME,
+    WETH_PLUME,
   ],
 }
 
@@ -130,12 +130,12 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
     BUSD_BSC,
     ETH_BSC,
   ],
-  [ChainId.AVALANCHE]: [
-    ...WRAPPED_NATIVE_CURRENCIES_ONLY[ChainId.AVALANCHE],
-    DAI_AVALANCHE,
-    USDC_AVALANCHE,
-    USDT_AVALANCHE,
-    WETH_AVALANCHE,
+  [ChainId.PLUME]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[ChainId.PLUME],
+    DAI_PLUME,
+    USDC_PLUME,
+    USDT_PLUME,
+    WETH_PLUME,
   ],
 }
 export const PINNED_PAIRS: { readonly [chainId: number]: [Token, Token][] } = {

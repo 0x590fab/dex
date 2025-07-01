@@ -1,5 +1,5 @@
 import { createMulticall, ListenerOptions } from '@uniswap/redux-multicall'
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { useInterfaceMulticall, useMainnetInterfaceMulticall } from 'hooks/useContract'
 import useBlockNumber, { useMainnetBlockNumber } from 'lib/hooks/useBlockNumber'
@@ -20,7 +20,7 @@ function getBlocksPerFetchForChainId(chainId: number | undefined): number {
     case ChainId.ARBITRUM_ONE:
     case ChainId.OPTIMISM:
       return 15
-    case ChainId.AVALANCHE:
+    case ChainId.PLUME:
     case ChainId.BNB:
     case ChainId.CELO:
     case ChainId.CELO_ALFAJORES:

@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 
 import { ExplorerDataType, getExplorerLink } from './getExplorerLink'
 
@@ -31,7 +31,7 @@ describe('#getExplorerLink', () => {
     expect(getExplorerLink(5, 'abc', ExplorerDataType.ADDRESS)).toEqual('https://goerli.etherscan.io/address/abc')
   })
   it('avalanche', () => {
-    expect(getExplorerLink(ChainId.AVALANCHE, 'abc', ExplorerDataType.ADDRESS)).toEqual(
+    expect(getExplorerLink(ChainId.PLUME, 'abc', ExplorerDataType.ADDRESS)).toEqual(
       'https://snowtrace.io/address/abc'
     )
   })

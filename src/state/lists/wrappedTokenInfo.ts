@@ -1,4 +1,4 @@
-import { Currency, Token } from '@uniswap/sdk-core'
+import { Currency, Token } from '@0x590fab/sdk-core'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 
 import { isAddress } from '../../utils'

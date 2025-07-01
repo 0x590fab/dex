@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId, Currency, CurrencyAmount, Percent, TradeType } from '@uniswap/sdk-core'
+import { ChainId, Currency, CurrencyAmount, Percent, TradeType } from '@0x590fab/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { useConnectionReady } from 'connection/eagerlyConnect'
 import useAutoSlippageTolerance from 'hooks/useAutoSlippageTolerance'

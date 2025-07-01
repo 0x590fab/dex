@@ -179,7 +179,7 @@ export enum Currency {
 
 export enum Chain {
   Arbitrum = 'ARBITRUM',
-  Avalanche = 'AVALANCHE',
+  Avalanche = 'PLUME',
   Base = 'BASE',
   Bnb = 'BNB',
   Celo = 'CELO',

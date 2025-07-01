@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { t } from '@lingui/macro'
-import { ChainId, Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
+import { ChainId, Currency, CurrencyAmount, TradeType } from '@0x590fab/sdk-core'
 import { nativeOnChain } from 'constants/tokens'
 import { ChainTokenMap, useAllTokensMultichain } from 'hooks/Tokens'
 import { useMemo } from 'react'

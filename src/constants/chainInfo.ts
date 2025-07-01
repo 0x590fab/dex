@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 import bnbCircleLogoUrl from 'assets/images/bnbCircle.svg'
 import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
 import polygonCircleLogoUrl from 'assets/images/polygonCircle.png'
@@ -19,7 +19,7 @@ import ms from 'ms'
 import { darkTheme } from 'theme/colors'
 
 import { SupportedL1ChainId, SupportedL2ChainId } from './chains'
-import { ARBITRUM_LIST, AVALANCHE_LIST, BASE_LIST, CELO_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST } from './lists'
+import { ARBITRUM_LIST, PLUME_LIST, BASE_LIST, CELO_LIST, OPTIMISM_LIST, PLASMA_BNB_LIST } from './lists'
 
 export const AVERAGE_L1_BLOCK_TIME = ms(`12s`)
 
@@ -227,7 +227,7 @@ const CHAIN_INFO: ChainInfoMap = {
     color: darkTheme.chain_56,
     backgroundColor: darkTheme.chain_56_background,
   },
-  [ChainId.AVALANCHE]: {
+  [ChainId.PLUME]: {
     networkType: NetworkType.L1,
     blockWaitMsBeforeWarning: ms(`10m`),
     bridge: 'https://core.app/bridge/',
@@ -239,7 +239,7 @@ const CHAIN_INFO: ChainInfoMap = {
     circleLogoUrl: avaxLogo,
     squareLogoUrl: avaxSquareLogo,
     nativeCurrency: { name: 'AVAX', symbol: 'AVAX', decimals: 18 },
-    defaultListUrl: AVALANCHE_LIST,
+    defaultListUrl: PLUME_LIST,
     color: darkTheme.chain_43114,
     backgroundColor: darkTheme.chain_43114_background,
   },

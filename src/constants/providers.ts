@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 import AppRpcProvider from 'rpc/AppRpcProvider'
 import AppStaticJsonRpcProvider from 'rpc/StaticJsonRpcProvider'
 import StaticJsonRpcProvider from 'rpc/StaticJsonRpcProvider'
@@ -28,6 +28,6 @@ export const RPC_PROVIDERS: { [key in SupportedInterfaceChain]: StaticJsonRpcPro
   [ChainId.CELO]: providerFactory(ChainId.CELO),
   [ChainId.CELO_ALFAJORES]: providerFactory(ChainId.CELO_ALFAJORES),
   [ChainId.BNB]: providerFactory(ChainId.BNB),
-  [ChainId.AVALANCHE]: providerFactory(ChainId.AVALANCHE),
+  [ChainId.PLUME]: providerFactory(ChainId.PLUME),
   [ChainId.BASE]: providerFactory(ChainId.BASE),
 }

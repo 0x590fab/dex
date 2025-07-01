@@ -1,4 +1,4 @@
-import { ChainId, NativeCurrency, Token } from '@uniswap/sdk-core'
+import { ChainId, NativeCurrency, Token } from '@0x590fab/sdk-core'
 import { nativeOnChain } from 'constants/tokens'
 import { useMemo } from 'react'
 

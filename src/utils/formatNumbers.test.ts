@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react'
-import { CurrencyAmount, Percent } from '@uniswap/sdk-core'
+import { CurrencyAmount, Percent } from '@0x590fab/sdk-core'
 import { USDC_MAINNET } from 'constants/tokens'
 import { useActiveLocale } from 'hooks/useActiveLocale'
 import { mocked } from 'test-utils/mocked'

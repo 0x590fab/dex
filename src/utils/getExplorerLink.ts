@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 
 const BLOCK_EXPLORER_PREFIXES: { [chainId: number]: string } = {
   [ChainId.MAINNET]: 'https://etherscan.io',
@@ -11,7 +11,7 @@ const BLOCK_EXPLORER_PREFIXES: { [chainId: number]: string } = {
   [ChainId.CELO]: 'https://celoscan.io',
   [ChainId.CELO_ALFAJORES]: 'https://alfajores-blockscout.celo-testnet.org',
   [ChainId.BNB]: 'https://bscscan.com',
-  [ChainId.AVALANCHE]: 'https://snowtrace.io',
+  [ChainId.PLUME]: 'https://snowtrace.io',
   [ChainId.BASE]: 'https://basescan.org',
 }
 

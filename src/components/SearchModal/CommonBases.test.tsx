@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@0x590fab/sdk-core'
 import { render } from 'test-utils/render'
 
 import CommonBases from './CommonBases'
